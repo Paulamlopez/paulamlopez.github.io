@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paula López — Finanzas · Odoo · Power BI · PLA/FT</title>
+<meta name="description" content="Consultoría en finanzas, implementación Odoo, dashboards Power BI y cumplimiento PLA/FT para pymes y sujetos obligados.">
+<style>
+  :root{
+    --bg:#0f1420; --panel:#171e2e; --panel2:#1c2438;
+    --text:#e8ecf4; --muted:#9aa5bb; --accent:#4f8cff; --accent2:#38c6a3;
+    --border:#2a3450; --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.65}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{padding:80px 0 56px;border-bottom:1px solid var(--border)}
+  .eyebrow{color:var(--accent2);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;margin-bottom:14px}
+  h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.2;margin-bottom:18px}
+  h1 span{color:var(--accent)}
+  .lead{color:var(--muted);font-size:1.1rem;max-width:640px;margin-bottom:28px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;padding:13px 26px;border-radius:10px;font-weight:600}
+  .cta:hover{filter:brightness(1.1);text-decoration:none}
+  .cta.ghost{background:transparent;border:1px solid var(--border);color:var(--text);margin-left:10px}
+
+  section{padding:56px 0;border-bottom:1px solid var(--border)}
+  h2{font-size:1.5rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:32px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:26px}
+  .card h3{font-size:1.08rem;margin-bottom:10px}
+  .card .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);margin-bottom:12px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .card ul{margin:14px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
+  .card li{margin-bottom:6px}
+
+  .creds{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--panel2);border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:.88rem;color:var(--text)}
+
+  .steps{counter-reset:step;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .step{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+  .step::before{counter-increment:step;content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;margin-bottom:12px}
+  .step h3{font-size:1rem;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.92rem}
+
+  footer{padding:56px 0;text-align:center}
+  footer .lead{margin:0 auto 24px}
+  .contact{color:var(--muted);margin-top:26px;font-size:.95rem}
+
+  @media (prefers-color-scheme: light){
+    :root{--bg:#f6f8fc;--panel:#ffffff;--panel2:#eef2f9;--text:#1a2233;--muted:#5a6478;--border:#dbe2ef}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Finanzas · Tecnología · Cumplimiento</div>
+    <h1>Ordena tus números, automatiza tu operación y <span>duerme tranquilo con el regulador</span>.</h1>
+    <p class="lead">Ayudo a pymes y sujetos obligados a tomar decisiones con datos reales: implementación Odoo, dashboards ejecutivos en Power BI y programas de prevención PLA/FT — con criterio financiero, no solo técnico.</p>
+    <a class="cta" href="mailto:paulalopez_11@hotmail.com?subject=Diagn%C3%B3stico%20gratuito%2030%20min">Agenda un diagnóstico gratuito de 30 min</a>
+    <a class="cta ghost" href="#servicios">Ver servicios</a>
+  </div>
+</header>
+
+<section id="servicios">
+  <div class="wrap">
+    <h2>Servicios</h2>
+    <p class="sub">Paquetes de precio fijo y alcance cerrado. Sin sorpresas en la factura.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Odoo</span>
+        <h3>Implementación y automatización</h3>
+        <p>Para empresas que usan Odoo (o quieren empezar) y siguen haciendo a mano lo que el sistema podría hacer solo.</p>
+        <ul>
+          <li>Módulos personalizados y automatización de procesos</li>
+          <li>Reportes y flujos de aprobación a la medida</li>
+          <li>Integraciones vía API (bancos, e-commerce, logística)</li>
+          <li>Levantamiento de requerimientos y definición de MVP</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Power BI</span>
+        <h3>Dashboards ejecutivos</h3>
+        <p>Para gerentes que deciden con Excel armados a mano cada fin de mes.</p>
+        <ul>
+          <li>Tableros financieros, de ventas y operaciones</li>
+          <li>Conectados a tus fuentes reales: Odoo, ERP, Excel, SQL</li>
+          <li>KPIs y OKRs definidos con la gerencia</li>
+          <li>Actualización automática — nadie vuelve a "armar el reporte"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">PLA/FT</span>
+        <h3>Cumplimiento y prevención</h3>
+        <p>Para cooperativas, fintechs, inmobiliarias y demás sujetos obligados que no quieren sorpresas en la próxima revisión.</p>
+        <ul>
+          <li>Diagnóstico del programa de prevención</li>
+          <li>Matriz de riesgo LA/FT y manual actualizado</li>
+          <li>Debida diligencia y controles internos</li>
+          <li>Capacitación al personal con constancia</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Por qué conmigo</h2>
+    <p class="sub">La mayoría de los consultores domina una de estas tres áreas. Yo trabajo en la intersección: implemento el sistema entendiendo el estado financiero que produce y los controles que debe cumplir.</p>
+    <div class="creds">
+      <span class="chip">Máster en Dirección Financiera</span>
+      <span class="chip">Liderazgo en operaciones y auditoría financiera</span>
+      <span class="chip">2 diplomados en PLA/FT</span>
+      <span class="chip">Registered Scrum Master (RSM)</span>
+      <span class="chip">Registered Product Owner (RPO)</span>
+      <span class="chip">Odoo · Power BI · APIs · Jira</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo trabajamos</h2>
+    <p class="sub">Simple y sin compromiso hasta que veas la propuesta.</p>
+    <div class="steps">
+      <div class="step"><h3>Diagnóstico gratuito</h3><p>30 minutos por videollamada. Sales con 2–3 mejoras detectadas, te sirvan conmigo o por tu cuenta.</p></div>
+      <div class="step"><h3>Propuesta en 24 h</h3><p>Alcance cerrado, entregables concretos, precio fijo y cronograma. Dos páginas, sin letra pequeña.</p></div>
+      <div class="step"><h3>Entrega por hitos</h3><p>50% para arrancar, 50% contra entrega. Avances semanales y capacitación a tu equipo incluida.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>¿Empezamos?</h2>
+    <p class="lead">El diagnóstico es gratis y sin compromiso. Lo peor que puede pasar es que salgas con buenas ideas.</p>
+    <a class="cta" href="mailto:paulalopez_11@hotmail.com?subject=Diagn%C3%B3stico%20gratuito%2030%20min">Escríbeme</a>
+    <p class="contact">paulalopez_11@hotmail.com · <a href="https://www.linkedin.com/in/paula-l%C3%B3pez-517648168/">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
