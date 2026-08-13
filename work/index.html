@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selected Work — Paula López</title>
+<meta name="description" content="Selected consulting work: Odoo ERP implementation and automation, executive Power BI dashboards, and management reporting built on finance fundamentals.">
+<link rel="canonical" href="https://paulamlopez.github.io/work/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://paulamlopez.github.io/work/">
+<meta property="og:title" content="Selected Work — Paula López">
+<meta property="og:description" content="Odoo implementation, Power BI dashboards and management reporting — built by a consultant who reads the financials behind the data.">
+<meta property="og:image" content="https://paulamlopez.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Selected Work — Paula López">
+<meta name="twitter:description" content="Odoo implementation, Power BI dashboards and management reporting — built by a consultant who reads the financials behind the data.">
+<meta name="twitter:image" content="https://paulamlopez.github.io/og.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f1a28'/><text y='68' x='50' text-anchor='middle' font-family='Georgia,serif' font-size='54' fill='%234f8cff'>P</text></svg>">
+<style>
+  :root{
+    --bg:#0d1420; --panel:#151e2e; --panel-2:#1a2436; --hair:#26314a;
+    --ink:#e9edf5; --muted:#98a3ba; --faint:#6f7c95;
+    --accent:#5b93ff; --accent-2:#3cc3a0;
+    --r:14px; --r-sm:9px;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.22);
+    --display:Georgia,'Iowan Old Style','Times New Roman',serif;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  @media (prefers-color-scheme:light){
+    :root{
+      --bg:#f5f7fb; --panel:#ffffff; --panel-2:#eef2f8; --hair:#dde4ef;
+      --ink:#141d2c; --muted:#586580; --faint:#7d8aa2;
+      --accent:#2f6bd4; --accent-2:#1a9a7c;
+      --shadow:0 1px 2px rgba(20,29,44,.05), 0 8px 26px rgba(20,29,44,.07);
+    }
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  .top{border-bottom:1px solid var(--hair);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+  .top .wrap{display:flex;align-items:center;gap:20px;padding-top:15px;padding-bottom:15px}
+  .logo{font-family:var(--display);font-size:1.05rem;font-weight:700;color:var(--ink)}
+  .logo:hover{text-decoration:none}
+  .top nav{margin-left:auto;display:flex;gap:22px;font-size:.92rem}
+  .top nav a{color:var(--muted);font-weight:500}
+  .top nav a:hover{color:var(--ink);text-decoration:none}
+
+  header{padding:70px 0 46px}
+  .eyebrow{color:var(--accent-2);font-weight:600;letter-spacing:.13em;text-transform:uppercase;font-size:.74rem;margin-bottom:18px}
+  h1{font-family:var(--display);font-size:clamp(1.9rem,4.6vw,2.6rem);line-height:1.16;letter-spacing:-.02em;text-wrap:balance;margin-bottom:20px;font-weight:700}
+  .lead{color:var(--muted);font-size:1.08rem;max-width:62ch}
+
+  .cases{display:flex;flex-direction:column;gap:24px;padding-bottom:16px}
+  .case{background:var(--panel);border:1px solid var(--hair);border-radius:var(--r);padding:30px;box-shadow:var(--shadow)}
+  @media(max-width:560px){.case{padding:23px}}
+  .case .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);margin-bottom:12px}
+  .case h2{font-family:var(--display);font-size:1.4rem;letter-spacing:-.015em;margin-bottom:16px;font-weight:700;text-wrap:balance}
+  .case h3{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:22px 0 9px}
+  .case p{color:var(--muted);font-size:.96rem}
+  .case ul{margin:0;padding-left:20px;color:var(--muted);font-size:.94rem}
+  .case li{margin-bottom:8px}
+  .case li strong{color:var(--ink);font-weight:600}
+  .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;padding-top:20px;border-top:1px solid var(--hair)}
+  .pill{background:var(--panel-2);border:1px solid var(--hair);border-radius:999px;padding:5px 13px;font-size:.79rem;color:var(--muted)}
+  .cta{display:inline-block;background:var(--accent);color:#fff;padding:11px 22px;border-radius:var(--r-sm);font-weight:600;font-size:.93rem;margin-top:22px;box-shadow:var(--shadow)}
+  .cta:hover{filter:brightness(1.08);text-decoration:none}
+  .disclaimer{font-size:.83rem;color:var(--faint);margin-top:16px}
+
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:22px}
+  @media(max-width:560px){.metrics{grid-template-columns:1fr 1fr}}
+  .m{background:var(--panel-2);border:1px solid var(--hair);border-radius:var(--r-sm);padding:13px 14px}
+  .m .k{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:700}
+  .m .v{font-size:1.3rem;font-weight:750;letter-spacing:-.02em;margin-top:4px;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .m .v small{font-size:.74rem;font-weight:600;color:var(--muted);margin-left:1px}
+
+  .note{background:var(--panel-2);border:1px solid var(--hair);border-left:3px solid var(--accent-2);border-radius:var(--r-sm);padding:16px 18px;font-size:.9rem;color:var(--muted);margin-top:30px}
+
+  footer{padding:56px 0;border-top:1px solid var(--hair);text-align:center;margin-top:44px}
+  footer h2{font-family:var(--display);font-size:1.5rem;margin-bottom:12px;letter-spacing:-.015em}
+  footer p{color:var(--muted);max-width:52ch;margin:0 auto 24px}
+  .contact{color:var(--muted);margin-top:26px;font-size:.92rem}
+  .contact a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+  .contact a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a class="logo" href="/">Paula López</a>
+    <nav>
+      <a href="/">Inicio (ES)</a>
+      <a href="/demo/">Live demo</a>
+    </nav>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Selected work</div>
+    <h1>ERP and reporting work, built on finance fundamentals</h1>
+    <p class="lead">I don't just deliver a chart or a configured module. Having led operations and financial audit for over six years, I design workflows knowing the entries they post, the controls they need, and the numbers management will read at month-end. That is usually where technically correct implementations quietly fail.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cases">
+
+    <article class="case">
+      <span class="tag">Power BI · Demo project</span>
+      <h2>Executive financial dashboard for a mid-sized distributor</h2>
+      <p>A complete executive reporting layer built as a demonstration project, covering eighteen months of operations for a sample distribution company. Every figure below is generated from the underlying dataset — the dashboard is fully interactive and live.</p>
+
+      <div class="metrics">
+        <div class="m"><div class="k">Revenue</div><div class="v">$2.17<small>M</small></div></div>
+        <div class="m"><div class="k">Gross margin</div><div class="v">38.6<small>%</small></div></div>
+        <div class="m"><div class="k">Operating</div><div class="v">23.1<small>%</small></div></div>
+        <div class="m"><div class="k">DSO</div><div class="v">40<small>d</small></div></div>
+      </div>
+
+      <h3>The problem it solves</h3>
+      <p>Management teams routinely compare this month against last month, which seasonality distorts badly — December always looks like a triumph next to November. Meanwhile overdue receivables sit unwatched, and nobody knows the real collection cycle.</p>
+
+      <h3>What the dashboard does</h3>
+      <ul>
+        <li><strong>Executive summary</strong> — revenue, gross margin, operating profit, overdue receivables and DSO, with month-over-month revenue plotted against the same month last year, so seasonality stops fooling the reading.</li>
+        <li><strong>Sales analysis</strong> — a client-by-month heatmap that surfaces who is growing and who is quietly slipping, plus performance by salesperson and by city.</li>
+        <li><strong>Receivables and expenses</strong> — overdue invoices ranked by client, receivables by status, and monthly spend by category. In most SMEs this page is where forgotten cash turns up.</li>
+      </ul>
+
+      <h3>How it was built</h3>
+      <ul>
+        <li>Star-schema data model with a dedicated date table marked for time intelligence</li>
+        <li>Sixteen DAX measures covering margin, operating profit, month-over-month and year-over-year variance, receivables ageing and DSO</li>
+        <li>Cross-filtering across every visual: one click on a month drills the entire report</li>
+      </ul>
+
+      <a class="cta" href="/demo/">Open the live dashboard</a>
+      <p class="disclaimer">Built with 100% fictitious data for a fictitious company. No client information is represented.</p>
+
+      <div class="stack">
+        <span class="pill">Power BI</span><span class="pill">DAX</span><span class="pill">Data modeling</span>
+        <span class="pill">Time intelligence</span><span class="pill">Financial analysis</span>
+      </div>
+    </article>
+
+    <article class="case">
+      <span class="tag">Odoo · Client engagement</span>
+      <h2>Odoo ERP implementation and process automation</h2>
+      <p>Led the Odoo implementation and digital transformation programme for a professional services firm, from requirements gathering through deployment and team adoption.</p>
+
+      <h3>Scope of the work</h3>
+      <ul>
+        <li><strong>Requirements and process mapping</strong> across departments — documenting how work actually ran before deciding what the system should enforce</li>
+        <li><strong>Module configuration and custom development</strong> — tailored modules and reports for operational needs the standard configuration did not cover</li>
+        <li><strong>API integrations</strong> connecting Odoo with external platforms</li>
+        <li><strong>Management reporting layer</strong> — KPI and OKR definitions built on top of ERP data, so leadership read the same numbers the operation produced</li>
+        <li><strong>Training and adoption</strong> — the part most implementations underinvest in, and the reason many of them fail</li>
+      </ul>
+
+      <h3>The approach that made it work</h3>
+      <p>Configuration decisions were made against the accounting they produce, not only the process they automate. A purchasing flow that is elegant operationally but posts entries the finance team has to correct manually every month is not automation — it just moved the work.</p>
+
+      <p class="disclaimer">Client name withheld under confidentiality.</p>
+
+      <div class="stack">
+        <span class="pill">Odoo</span><span class="pill">Custom modules</span><span class="pill">API integration</span>
+        <span class="pill">Process automation</span><span class="pill">Requirements analysis</span><span class="pill">Change management</span>
+      </div>
+    </article>
+
+    <article class="case">
+      <span class="tag">Finance &amp; operations · Ongoing</span>
+      <h2>Operations leadership and management reporting</h2>
+      <p>Over six years leading operations and financial audit engagements at a professional services firm, reporting to general management.</p>
+
+      <h3>What the role covers</h3>
+      <ul>
+        <li><strong>Strategic planning and financial analysis</strong> supporting data-driven decisions at board level</li>
+        <li><strong>KPI and OKR frameworks</strong> designed and implemented for management</li>
+        <li><strong>Risk management and internal controls</strong>, including compliance programmes under AML/CFT regulation</li>
+        <li><strong>Digital transformation projects</strong> — ERP implementation and executive reporting</li>
+        <li><strong>Process and quality optimisation</strong> across audit engagements</li>
+      </ul>
+
+      <h3>Why this matters for consulting work</h3>
+      <p>It is the reason a dashboard I build asks different questions. Someone who has signed off on financial statements knows which numbers get manipulated, which controls actually get tested, and which report management genuinely reads on a Monday morning versus which one gets filed unopened.</p>
+
+      <div class="stack">
+        <span class="pill">Financial audit</span><span class="pill">Internal controls</span><span class="pill">KPIs &amp; OKRs</span>
+        <span class="pill">AML/CFT compliance</span><span class="pill">Risk management</span><span class="pill">Team leadership</span>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>A note on confidentiality.</strong> Client engagements are described without naming organisations or reproducing their data. The dashboard above was built specifically as a demonstration piece, using generated data for a fictitious company, so that capability can be shown without exposing anyone's numbers.
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's talk about your operation</h2>
+    <p>Every engagement starts with a free 30-minute call. You leave it with two or three concrete improvements, whether or not we work together.</p>
+    <a class="cta" href="mailto:paulalopez_11@hotmail.com?subject=Consulting%20enquiry">Get in touch</a>
+    <p class="contact">
+      paulalopez_11@hotmail.com<br>
+      <a href="https://www.linkedin.com/in/paula-l%C3%B3pez-517648168/">LinkedIn</a> ·
+      <a href="/">Versión en español</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
