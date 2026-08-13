@@ -67,6 +67,7 @@
   .case h2{font-family:var(--display);font-size:1.4rem;letter-spacing:-.015em;margin-bottom:16px;font-weight:700;text-wrap:balance}
   .case h3{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:22px 0 9px}
   .case p{color:var(--muted);font-size:.96rem}
+  .case code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.87em;background:var(--panel-2);border:1px solid var(--hair);border-radius:5px;padding:1px 6px;color:var(--ink)}
   .case ul{margin:0;padding-left:20px;color:var(--muted);font-size:.94rem}
   .case li{margin-bottom:8px}
   .case li strong{color:var(--ink);font-weight:600}
@@ -155,6 +156,32 @@
     </article>
 
     <article class="case">
+      <span class="tag">Systems integration · Client engagement</span>
+      <h2>Rescuing an integration that had silently stopped working</h2>
+      <p>An hourly automation moving issues from Jira into a Dataverse table had been reporting failed runs for weeks. Data had stopped flowing entirely, and the error the connector returned pointed at the wrong thing.</p>
+
+      <h3>The apparent cause versus the real one</h3>
+      <p>The connector reported that records could not be found, which read as a data problem. It was not. Records were looked up by a business key containing a colon — a value like <code>jira:ADM-123</code> — and the colon broke the request URL. The service returned an HTML error page, which the connector then surfaced as "record not found". The update-by-alternate-key step had in fact never worked; it had been failing quietly since the integration was built.</p>
+
+      <h3>The redesign</h3>
+      <ul>
+        <li><strong>Look up by filter</strong> rather than by alternate key, so the value is encoded correctly regardless of the characters it contains</li>
+        <li><strong>Update by internal identifier</strong> (the record GUID) once the row is located, which removes the fragile path entirely</li>
+        <li><strong>Create only when the lookup returns empty</strong>, with the uniqueness constraint retained as a safety net rather than as the primary mechanism</li>
+      </ul>
+
+      <h3>Result</h3>
+      <p>A verified clean run reconciling roughly 1,300 records with no duplicates, and the incremental window tightened from a year to two hours — which cut both the runtime and the risk of a backlog rebuilding unnoticed.</p>
+
+      <p class="disclaimer">Client name and system details withheld under confidentiality.</p>
+
+      <div class="stack">
+        <span class="pill">Power Automate</span><span class="pill">Dataverse</span><span class="pill">Jira</span>
+        <span class="pill">API debugging</span><span class="pill">Root cause analysis</span><span class="pill">Data integrity</span>
+      </div>
+    </article>
+
+    <article class="case">
       <span class="tag">Odoo · Client engagement</span>
       <h2>Odoo ERP implementation and process automation</h2>
       <p>Led the Odoo implementation and digital transformation programme for a professional services firm, from requirements gathering through deployment and team adoption.</p>
@@ -163,7 +190,7 @@
       <ul>
         <li><strong>Requirements and process mapping</strong> across departments — documenting how work actually ran before deciding what the system should enforce</li>
         <li><strong>Module configuration and custom development</strong> — tailored modules and reports for operational needs the standard configuration did not cover</li>
-        <li><strong>API integrations</strong> connecting Odoo with external platforms</li>
+        <li><strong>API integrations</strong> connecting Odoo with external platforms, including electronic invoicing under local tax regulation — delivered alongside a licensed accounting firm that handles the certification and fiscal side</li>
         <li><strong>Management reporting layer</strong> — KPI and OKR definitions built on top of ERP data, so leadership read the same numbers the operation produced</li>
         <li><strong>Training and adoption</strong> — the part most implementations underinvest in, and the reason many of them fail</li>
       </ul>
